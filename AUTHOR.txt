@@ -1,6 +1,8 @@
-MIT License
+Cloned from https://github.com/lxieyang/chrome-extension-boilerplate-react
 
-Copyright (c) 2023 Yuki Yamamoto
+The MIT License (MIT)
+
+Copyright (c) 2019 Michael Xieyang Liu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
