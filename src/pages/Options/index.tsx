@@ -9,4 +9,5 @@ render(
   window.document.querySelector('#app-container')
 );
 
+// @ts-ignore
 if (module.hot) module.hot.accept();

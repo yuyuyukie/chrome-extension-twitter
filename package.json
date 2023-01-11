@@ -10,6 +10,9 @@
   "scripts": {
     "build": "node utils/build.js",
     "start": "node utils/webserver.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --fix",
+    "lintQuiet": "eslint --fix --quiet",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
   },
   "dependencies": {
@@ -20,13 +23,21 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
+    "@babel/eslint-parser": "^7.19.1",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
+    "@types/babel__core": "^7.1.20",
+    "@types/babel__preset-env": "^7.9.2",
     "@types/chrome": "^0.0.202",
+    "@types/copy-webpack-plugin": "^10.1.0",
+    "@types/eslint": "^8.4.10",
+    "@types/file-loader": "^5.0.1",
+    "@types/fs-extra": "^11.0.1",
+    "@types/node-sass": "^4.11.3",
+    "@types/prettier": "^2.7.2",
     "@types/react": "^17.0.52",
     "@types/react-dom": "^17.0.11",
-    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.3.0",
     "babel-preset-react-app": "^10.0.1",
     "clean-webpack-plugin": "^4.0.0",

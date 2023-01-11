@@ -4,7 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,5 +16,5 @@
     "jsx": "react"
   },
   "include": ["src"],
-  "exclude": ["build", "node_modules"]
+  "exclude": ["build", "node_modules", "utils"]
 }
