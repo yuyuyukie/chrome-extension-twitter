@@ -12,4 +12,6 @@ jobs:
         run: npm run lintQuiet
       - name: typescript
         run: npm run typecheck
+      - name: jest
+        run: npm run test
 
