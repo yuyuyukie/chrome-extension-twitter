@@ -2,6 +2,17 @@
 
 Twitterを開いた際にフォロー中をクリックします。
 
+## How to Use
+1. Run command
+```shell
+git clone git@github.com:yuyuyukie/chrome-extension-twitter.git && \
+cd chrome-extension-twitter && \
+npm ci && \
+npm run build
+```
+2. GoogleChromeの拡張機能の管理を開く
+3. chrome-extension-twitter/buildディレクトリを拡張機能の管理ページにドラッグドロップする
+
 ## Installing and Running
 
 ### Procedures:
