@@ -13,7 +13,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://twitter.com/home*"],
+      "matches": ["https://twitter.com/home"],
       "js": ["contentScript.bundle.js"],
       "css": ["content.styles.css"]
     }
