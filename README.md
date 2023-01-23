@@ -1,15 +1,6 @@
-## Youtubeの要素をスクリプトで取得できないため開発休止中
-
 ## Introduction
 
-This product enhances YouTube experiences.<br/>
-This product is cloned from Michael Xieyang Liu's repository.
-
-## Managing Product
-
-- Milestonesでエピックストーリーを管理
-- Issueでストーリーを管理
-- 上記をProject上でStatus管理
+Twitterを開いた際にフォロー中をクリックします。
 
 ## Installing and Running
 
@@ -22,10 +13,10 @@ This product is cloned from Michael Xieyang Liu's repository.
 5. Run `npm install` to install the dependencies.
 6. Run `npm start`
 7. Load your extension on Chrome following:
-    1. Access `chrome://extensions/`
-    2. Check `Developer mode`
-    3. Click on `Load unpacked extension`
-    4. Select the `build` folder.
+   1. Access `chrome://extensions/`
+   2. Check `Developer mode`
+   3. Click on `Load unpacked extension`
+   4. Select the `build` folder.
 8. Happy hacking.
 
 ## Structure
@@ -67,13 +58,13 @@ configure the entry point and exclude it from hot reloading, like this:
 
 ```js
 module.exports = {
-  ...otherOptions,
-  entry: {
-    myContentScript: "./src/js/myContentScript.js"
-  },
-  chromeExtensionBoilerplate: {
-    notHotReload: ["myContentScript"]
-  }
+   ...otherOptions,
+   entry: {
+      myContentScript: "./src/js/myContentScript.js"
+   },
+   chromeExtensionBoilerplate: {
+      notHotReload: ["myContentScript"]
+   }
 }
 ```
 
@@ -81,16 +72,16 @@ and on your `src/manifest.json`:
 
 ```json
 {
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "myContentScript.bundle.js"
-      ]
-    }
-  ]
+   "content_scripts": [
+      {
+         "matches": [
+            "https://www.google.com/*"
+         ],
+         "js": [
+            "myContentScript.bundle.js"
+         ]
+      }
+   ]
 }
 ```
 
