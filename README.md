@@ -1,3 +1,5 @@
+## Youtubeの要素をスクリプトで取得できないため開発休止中
+
 ## Introduction
 
 This product enhances YouTube experiences.<br/>
