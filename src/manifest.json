@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Youtube Enhancer",
-  "description": "Enhances youtube live stream.",
+  "name": "Twitter Latest Timelines",
+  "description": "フォロー中を常に表示します。",
   "options_page": "options.html",
   "background": { "service_worker": "background.bundle.js" },
   "action": {
@@ -13,7 +13,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/watch*"],
+      "matches": ["https://twitter.com/home*"],
       "js": ["contentScript.bundle.js"],
       "css": ["content.styles.css"]
     }
